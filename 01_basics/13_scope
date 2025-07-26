@@ -1,0 +1,117 @@
+var c = 300
+//global scope
+//global ki value block ma use ho sakti but its reverse dont allow
+// let a =300
+// if(true){
+//     let a =2;
+//     const b = 3;
+//     var c =9;
+//     console.log("inner:",a);
+    
+//     //its block scope
+// }
+
+// or (let i=0 ; i<Array.length;i++){
+//     const element = array [i]; 
+// }
+
+
+// console.log(a);
+// console.log(b);
+//  console.log(c);
+
+
+ //nested scope and closures (you must know anout DOM)
+
+ function one(){
+    const username ="maryam"
+
+    function two(){
+        const website ="youtube"
+        console.log(username);
+        
+    }
+    // console.log(website);
+    two()
+    
+ }
+//  one()
+
+//  if(true){
+//     const username="maryam"
+//     if(username === "maryam"){
+//         const website ="youtube "
+        // console.log(username + website);
+        
+        // console.log(username);
+        
+    // }
+    // console.log(website);
+   
+//  }
+// //  console.log(username);
+
+// **********interesting***********
+// console.log(addOne(5))
+// function addOne(value){
+//     return value + 1
+
+// }
+//hoistic
+
+// console.log(addTwo(5)) //oper add 5 fynction ke opar decleare kiya to run ho gaya but below it show error
+// opar bs declare kiya h but neechy hum ne declae ke sath isay hod bb kar kiya h in const
+// hoist how to declare function kaha sare variable kidr rakhny
+// const addTwo = function(num){
+//     return num + 2
+
+// }
+// arrow  function and this keyword(current context  )
+
+// const user ={
+//     username:"hitesh",
+//     price : 9090,
+
+//     welcomeMessage: function(){
+//         console.log(`${this.username},welcome to website`);
+//         console.log(this);
+        
+//     }
+// }
+// user.welcomeMessage()
+// user.username = "saim"
+// user.welcomeMessage()
+
+
+// console.log(this);
+// function chai(){
+//     let username ="khadija"
+//     // console.log(this.username);
+
+// }
+
+// chai()
+
+// function chai = function(){
+//     let user ="maryam"
+// }
+
+// const chai =() => {
+//     let username="manoo billi"
+//     console.log(this);
+    
+
+// }
+// chai()     
+// const addTwo = (num1,num2) => {
+//     return num1 + num2
+// }
+// console.log(addTwo(6,6));
+// implesive return
+const addTwo = (num1,num2) =>( num1 + num2)
+// agr curly bracket use kare tu retuen use hota h explesieve or jab pa
+
+
+// 
+// console.log(typeof welcomeMessage);
+
